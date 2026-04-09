@@ -15,6 +15,12 @@ const Counter = (props) => {
             >
                 press me!
             </button>
+
+            <button className={btnClassName}
+                onClick={() => setCount(0)}
+            >
+                clear
+            </button>
         </div>
     )
 }
