@@ -2,7 +2,11 @@
     background-color: #2f533e;
     border-radius: 8px;
     padding: 16px;
-    text-align: center;;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
 }
 
 .counter_title {
