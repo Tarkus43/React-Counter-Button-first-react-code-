@@ -4,7 +4,11 @@ function App() {
 
   return (
     <>
-      <Counter />
+      <Counter 
+        className='counter' 
+        btnClassName='counter_btn'
+        titleClassName='counter_title'
+       />
     </>
   )
 }

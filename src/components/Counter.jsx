@@ -1,12 +1,20 @@
 import { useState } from 'react'
 
-const Counter = () => {
+const Counter = (props) => {
     let [count, setCount] = useState(0)
+    const { className, btnClassName, titleClassName } = props
     return (
-        <>
-            <h1>Current count: {count}</h1>
-            <button onClick={() => setCount(count + 1)}>press me!</button>
-        </>
+        <div className={className}>
+            <h1 className={titleClassName}>
+                Current count: {count}
+            </h1>
+
+            <button className={btnClassName}
+                onClick={() => setCount(count + 1)}
+            >
+                press me!
+            </button>
+        </div>
     )
 }
 
